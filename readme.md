@@ -24,11 +24,27 @@ kubectl get rs -> to get all the replica sets
 
 kubectl get nodes -> to get all the nodes
 
+kubectl get ns -> to get all the namespaces
+
+kubectl get pods --all-namespaces -> to get all the pods in all namespaces
+
 kubectl get pv -> to get all the persistent volumes
+
+kubectl scale deployment deploymentname --replicas=3 -> to scale a deployment
+
+kubectl exec -it podname -- /bin/bash -> to get into a pod
+
+kubectl set image deployment deploymentname imagename=image:tag -> to update the image of a deployment
+
+kubectl delete pod podname -> to delete a pod
+
+kubectl delete deployment deploymentname -> to delete a deployment
 
 kubectl logs podname -> to get the logs of a pod
 
 kubectl describe pod podname -> to get the details of a pod
+
+
 
 
 minikube service servicename -> to open the service in the browser
